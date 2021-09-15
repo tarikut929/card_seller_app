@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity">
+
+    <LinearLayout android:layout_width="wrap_content"
+        android:id="@+id/transactionLinierLayout"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/titleTrns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium Text"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:padding="2dp"
+            android:textColor="#4d4d4d" />
+        <TextView
+            android:id="@+id/subtitleTrns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listTransaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="80dp">
+    </ListView>
+
+</RelativeLayout>
